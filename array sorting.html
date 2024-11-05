@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="result"></p>
+    <button onclick="ascending()">ASCENDING</button>
+    <button onclick="descending()">DESCENDING</button>
+    <script>
+        var array1=[1,2,6,90,18,38]
+        function ascending()
+        {
+            array1.sort(function(a,b){return(a-b)})
+            document.getElementById("result").innerHTML=array1
+        }
+        function descending()
+         {
+                array1.sort(function (a, b) { return (b-a) })
+                document.getElementById("result").innerHTML = array1
+            }
+        </script>
+</body>
+</html>
